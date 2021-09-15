@@ -7,7 +7,7 @@ import sys
 import time
 import pyromod.listen
 from pyrogram import Client, errors
-from config import Config
+from config import API_ID, API_HASH, PY_SESSION
 import logging
 
 logging.basicConfig(
