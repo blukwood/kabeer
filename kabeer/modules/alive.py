@@ -55,8 +55,10 @@ def get_readable_time(seconds: int) -> str:
 @app.on_message(filters.command("alive", PREFIX) & filters.me)
 async def alive(_, m):
     start_time = time.time()
+    await message.reply_sticker("CAACAgUAAxkBAAEGU0JhK49gLY2KvJUabs-p1A8BOUtFXgACBAMAAmA2WVUykujmd_XWISAE")
     uptime = get_readable_time((time.time() - StartTime))
-    reply_msg = f"**[Developer](https://github.com/TheCodents/DevelopersUserbot)**\n"
+    reply_msg = f"↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽"
+    reply_msg = f"**I am Alive\n"
     reply_msg += f"**Python Version:** `{__python_version__}`\n"
     reply_msg += f"**Pyrogram Version:** `{__pyro_version__}`\n"
     end_time = time.time()
@@ -71,4 +73,4 @@ async def pingme(_, message: Message):
     start = datetime.now()
     end = datetime.now()
     m_s = (end - start).microseconds / 1000
-    await message.edit(f"**[[Pyrogram]](https://docs.pyrogram.org)** \n**Ping Speed** **[DC-{app_info.dc_id}]**: `{m_s} ms`", disable_web_page_preview=True)
+    await message.edit(f"**Pong** : `{m_s} ms`", disable_web_page_preview=True)
