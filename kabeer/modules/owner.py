@@ -6,7 +6,7 @@ from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from pyrogram import Client, filters
 from kabeer import app, CMD_HELP
-
+from config import PREFIX
 # Help
 CMD_HELP.update(
     {
