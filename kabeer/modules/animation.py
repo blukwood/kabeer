@@ -7,6 +7,16 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 
+CMD_HELP.update(
+    {
+        "Animation": """
+**Animation:**
+  `istar` -> run and try
+  `ping` -> For Pinging Pyrogram
+"""
+    }
+)
+
 @app.on_message(filters.command("istar", PREFIX) & filters.me)
 async def kabeerstar(_, message: Message):
     animation_interval = 2
