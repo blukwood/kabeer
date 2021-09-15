@@ -1,7 +1,8 @@
 from config import PREFIX
 from kabeer import LOGGER, app
 from kabeer import app, CMD_HELP, StartTime
-
+import asyncio
+from collections import deque
 from pyrogram import Client, filters
 
 @app.on_message(filters.command("alive", PREFIX) & filters.me)
