@@ -6,7 +6,7 @@ import os
 from kabeer import app, CMD_HELP
 from pyrogram import filters
 from pyrogram.types import Message
-
+from config import PREFIX
 from kabeer.helpers.pyrohelper import get_arg
 
 
@@ -21,8 +21,8 @@ CMD_HELP.update(
 **Example:**
 
   ✘ `short`,
-   ⤷ Send command with url = `{Config.PREFIX}short https://google.com`
-   ⤷ Reply to a url message = `{Config.PREFIX}short` (Reply to a message with url)
+   ⤷ Send command with url = `{PREFIX}short https://google.com`
+   ⤷ Reply to a url message = `{PREFIX}short` (Reply to a message with url)
 """
     }
 )
