@@ -6,12 +6,12 @@ from collections import deque
 from pyrogram import Client, filters
 
 @app.on_message(filters.command("istar", PREFIX) & filters.me)
-async def ammastar(kabeerstar):
+async def kabeerstar(_, message: Message):
     if kabeerstar.fwd_from:  
         return
     animation_interval = 2
     animation_ttl = range(0, 11)
-    await eor(hellstar, "I am A Star")
+    await message.edit(kabeerstar, "I am A Star")
     animation_chars = [
         "I Party like a rockstar",
         "I Look like a movie star",
@@ -22,5 +22,5 @@ async def ammastar(kabeerstar):
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         
-        await hellstar.edit(animation_chars[i % 11])
+        await message.edit(animation_chars[i % 11])
     
