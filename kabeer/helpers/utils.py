@@ -4,6 +4,10 @@
 
 from enum import IntEnum, unique
 
+
+requirements_list = []
+
+
 @unique
 class Types(IntEnum):
     TEXT = 1
