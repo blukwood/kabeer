@@ -56,7 +56,6 @@ def get_readable_time(seconds: int) -> str:
 @app.on_message(filters.command("alive", PREFIX) & filters.me)
 async def alive(_, m):
     start_time = time.time()
-    await message.reply_sticker("CAACAgUAAxkBAAEGU0JhK49gLY2KvJUabs-p1A8BOUtFXgACBAMAAmA2WVUykujmd_XWISAE")
     uptime = get_readable_time((time.time() - StartTime))
     reply_msg = f"↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽↽"
     reply_msg = f"**I am Alive\n"
