@@ -16,7 +16,7 @@ CMD_HELP.update(
     {
         "Developer": """
 **Developer**
-  `peval` -> For Running Pyrogram Evaluations
+  `eval` -> For Running Pyrogram Evaluations
   `sh` -> For Running commands in shell.
 """
     }
@@ -31,7 +31,7 @@ async def aexec(code, client, message):
     return await locals()["__aexec"](client, message)
 
 
-@app.on_message(filters.command("peval", PREFIX) & filters.me)
+@app.on_message(filters.command("eval", PREFIX) & filters.me)
 async def evaluate(client, message):
     status_message = await message.edit("`Running ...`")
     try:
