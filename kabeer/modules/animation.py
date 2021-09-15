@@ -11,7 +11,7 @@ from pyrogram.types import Message
 async def kabeerstar(_, message: Message):
     animation_interval = 2
     animation_ttl = range(0, 11)
-    await message.edit(kabeerstar, "I am A Star")
+    await message.edit("I am A Star")
     animation_chars = [
         "I Party like a rockstar",
         "I Look like a movie star",
