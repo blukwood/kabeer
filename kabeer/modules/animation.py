@@ -5,7 +5,7 @@ import asyncio
 from collections import deque
 from pyrogram import Client, filters
 
-@app.on_message(filters.command("alive", PREFIX) & filters.me)
+@app.on_message(filters.command("istar", PREFIX) & filters.me)
 async def ammastar(kabeerstar):
     if kabeerstar.fwd_from:  
         return
