@@ -9,7 +9,6 @@ from kabeer import app, CMD_HELP, StartTime
 from sys import version_info
 from pyrogram import __version__ as __pyro_version__
 from pyrogram.types import Message
-from helpers.filters import other_filters2
 
 
 CMD_HELP.update(
