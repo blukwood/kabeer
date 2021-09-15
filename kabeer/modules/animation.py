@@ -4,6 +4,8 @@ from kabeer import app, CMD_HELP, StartTime
 import asyncio
 from collections import deque
 from pyrogram import Client, filters
+from pyrogram.types import Message
+
 
 @app.on_message(filters.command("istar", PREFIX) & filters.me)
 async def kabeerstar(_, message: Message):
