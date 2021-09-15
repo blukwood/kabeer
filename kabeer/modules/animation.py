@@ -9,8 +9,6 @@ from pyrogram.types import Message
 
 @app.on_message(filters.command("istar", PREFIX) & filters.me)
 async def kabeerstar(_, message: Message):
-    if kabeerstar.fwd_from:  
-        return
     animation_interval = 2
     animation_ttl = range(0, 11)
     await message.edit(kabeerstar, "I am A Star")
