@@ -5,7 +5,7 @@ from pyrogram.types import Message, ChatPermissions
 
 from pyrogram.errors import UserAdminInvalid
 from pyrogram.methods.chats.get_chat_members import Filters as ChatMemberFilters
-from config import Config
+from config import PREFIX
 from kabeer import app, CMD_HELP
 from kabeer.helpers.pyrohelper import get_arg, get_args
 from kabeer.helpers.adminhelpers import CheckAdmin
