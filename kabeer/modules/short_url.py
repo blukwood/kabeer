@@ -8,7 +8,6 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from kabeer.helpers.pyrohelper import get_arg
-from config import Config
 
 
 # Help
