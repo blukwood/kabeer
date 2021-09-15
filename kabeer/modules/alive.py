@@ -7,7 +7,6 @@ from datetime import datetime
 from pyrogram import filters
 from kabeer import app, CMD_HELP, StartTime
 from sys import version_info
-from config import Config
 from pyrogram import __version__ as __pyro_version__
 from pyrogram.types import Message
 
