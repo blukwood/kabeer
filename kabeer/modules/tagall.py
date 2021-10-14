@@ -1,7 +1,7 @@
 from config import PREFIX
 import asyncio
-from kabeer import LOGGER, app
-from kabeer import app, CMD_HELP
+from kabeer import LOGGER, app1, app2
+from kabeer import CMD_HELP
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
@@ -17,7 +17,8 @@ CMD_HELP.update(
 )
 
 
-@app.on_message(filters.command("tagall", PREFIX) & filters.me)
+@app1.on_message(filters.command("tagall", PREFIX))
+@app2.on_message(filters.command("tagall", PREFIX))
 async def tagall(client: Client, message: Message):
     await message.delete()
     chat_id = message.chat.id
